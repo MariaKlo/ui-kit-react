@@ -1,6 +1,7 @@
 import React from "react";
 import InputPassword from "./inputPassword";
-// import InputEmail from "./inputEmail";
+import InputEmail from "./inputEmail";
+import RadioButton from "../radio-buttons/radio-buttons";
 
 class InputForm extends React.Component {
     state = {
@@ -57,6 +58,8 @@ const Inputs = (props) => (
         <p className="inputs__text">{props.text}</p>
         <InputForm/>
         <InputPassword/>
+        <InputEmail/>
+        <RadioButton/>
     </form>
 );
 

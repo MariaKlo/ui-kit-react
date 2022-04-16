@@ -34,6 +34,7 @@ class InputPassword extends React.Component {
                 onBlur={this.onPasswordBlur}
                 />
                 {passwordError && <div>{passwordError}</div>}
+                <br/>
             </label>
         );
     }
