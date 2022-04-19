@@ -21,6 +21,11 @@ class InputEmail extends React.Component {
         return this.setState({emailError});
     }
 
+    onEmailChange = event => 
+    this.setState({
+        email: event.target.value
+    });
+
     render() {
         const { emailError } = this.state;
 
@@ -31,8 +36,10 @@ class InputEmail extends React.Component {
                 type="email"
                 name="email"
                 onBlur={this.onEmailBlur}
+                onChange={this.onEmailChange}
                 />
                 {emailError && <div>{emailError}</div>}
+                <br/>
             </label>
         );
     }

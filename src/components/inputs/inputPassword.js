@@ -8,7 +8,7 @@ class InputPassword extends React.Component {
 
     // check valid password
     checkValidPassword = password => {
-        const regex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
+        const regex = /^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}$/;
 
         return !regex.test(password)
         ? "Minimum eight characters, at least one uppercase letter, one lowercase letter, one number and one special character"
@@ -22,6 +22,11 @@ class InputPassword extends React.Component {
         return this.setState({passwordError});
     }
 
+    onPasswordChange = event => 
+    this.setState({
+        password: event.target.value
+    });
+
     render() {
         const { passwordError } = this.state;
 
@@ -31,8 +36,10 @@ class InputPassword extends React.Component {
                 <input
                 type="password"
                 name="password"
+                onChange={this.onPasswordChange}
                 onBlur={this.onPasswordBlur}
                 />
+                <br/>
                 {passwordError && <div>{passwordError}</div>}
                 <br/>
             </label>
