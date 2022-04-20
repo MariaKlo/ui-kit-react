@@ -11,7 +11,7 @@ class InputPassword extends React.Component {
         const regex = /^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}$/;
 
         return !regex.test(password)
-        ? "Minimum eight characters, at least one uppercase letter, one lowercase letter, one number and one special character"
+        ? "Minimum eight characters, at least one uppercase letter,\n one lowercase letter, one number and one special character"
         : "";
     }
 
@@ -36,6 +36,7 @@ class InputPassword extends React.Component {
                 <input
                 type="password"
                 name="password"
+                className="input__password"
                 onChange={this.onPasswordChange}
                 onBlur={this.onPasswordBlur}
                 />

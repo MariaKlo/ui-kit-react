@@ -1,8 +1,8 @@
 import React from "react";
 import InputPassword from "./inputPassword";
 import InputEmail from "./inputEmail";
-import RadioButton from "../radio-buttons/radio-buttons";
 import InputName from "./inputName";
+import './inputs.css';
 
 
 // create inputs
@@ -13,7 +13,6 @@ const Inputs = (props) => (
         <InputName/>
         <InputPassword/>
         <InputEmail/>
-        <RadioButton/>
     </form>
 );
 

@@ -8,10 +8,10 @@ class InputName extends React.Component {
 
     // check valid name
     validateName = name => {
-        const regex = /[A-Za-z]{3,}/;
+        const regex = /[A-Za-z]{1,}/;
     
         return !regex.test(name)
-          ? "The name must contain at least three letters. Numbers and special characters are not allowed."
+          ? "The name must contain at least one letter. Numbers and special characters are not allowed."
           : "";
     };
 
@@ -38,6 +38,7 @@ class InputName extends React.Component {
                     <input 
                     type="text"
                     name="firstName"
+                    className="input__name"
                     onChange={this.onFirstNameChange}
                     onBlur={this.onFirstBlurName}
                     />

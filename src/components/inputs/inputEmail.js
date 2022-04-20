@@ -35,6 +35,7 @@ class InputEmail extends React.Component {
                 <input
                 type="email"
                 name="email"
+                className="input__email"
                 onBlur={this.onEmailBlur}
                 onChange={this.onEmailChange}
                 />
