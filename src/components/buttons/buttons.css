@@ -1,3 +1,10 @@
+.buttons {
+    border-radius: 20px;
+    padding-bottom: 1.25rem;
+    -webkit-box-shadow: 43px -24px 5px -3px rgba(0,0,0,0), 1px 12px 28px 9px rgba(0,0,0,0.34); 
+    box-shadow: 43px -24px 5px -3px rgba(0,0,0,0), 1px 12px 28px 9px rgba(0,0,0,0.34);
+}
+
 .buttons__wrapper {
     display: flex;
     justify-content: space-around;
@@ -17,8 +24,8 @@
 }
 
 .button_pink {
-    border: 2px solid pink;
-    color: pink;
+    border: 2px solid rgba(255, 131, 235, 1);
+    color: rgba(255, 131, 235, 1);
 }
 
 .button_black {
@@ -39,4 +46,5 @@
 .button_pink:hover, .button_black:hover, .button_grey:hover, .button_purple:hover {
     opacity: 0.5;
     transition: all 0.3s;
+    cursor: pointer;
 }
