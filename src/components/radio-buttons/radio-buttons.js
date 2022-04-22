@@ -5,7 +5,6 @@ class RadioButton extends React.Component {
     render() {
         return (
             <div className="radio-buttons">
-                <br/>
                 <h1>Radio buttons</h1>
                 <div className="radio-buttons__wrap">
                     <div className="radio-button__wrap">
