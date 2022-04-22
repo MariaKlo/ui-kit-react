@@ -9,9 +9,9 @@ function App() {
       <div className="wrapper">
         <Buttons/>
         <div className='inputs__wrap'>
-          <Inputs text="Please, enter your name and password"/>
-          <Inputs text="Please, enter your name and password"/>
-          <Inputs text="Please, enter your name and password"/>
+          <Inputs text="Please, enter your name, email and password"/>
+          <Inputs text="Please, enter your name, email and password"/>
+          <Inputs text="Please, enter your name, email and password"/>
         </div>
         <RadioButton/>
       </div>
