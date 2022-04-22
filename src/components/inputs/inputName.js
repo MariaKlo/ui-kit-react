@@ -42,7 +42,6 @@ class InputName extends React.Component {
                     onChange={this.onFirstNameChange}
                     onBlur={this.onFirstBlurName}
                     />
-                    <br/>
                     {firstNameError && <div>{firstNameError}</div>}
                     <br/>
                 </label>

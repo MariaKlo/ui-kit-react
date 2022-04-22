@@ -1,31 +1,42 @@
 .inputs {
     border-radius: 15px;
     padding: 1rem;
-    color: white;
+    color: black;
+    -webkit-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+    box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+    width: 22.1875rem;
 }
 
 .inputs:nth-child(1) {
-    background-color: rgba(100, 0, 100, 1);
     border-radius: 15px;
-    border: 1px solid rgba(100, 0, 100, 1);
+    border: 3px solid rgba(100, 0, 100, 1);
 }
 
 .inputs:nth-child(2) {
-    background-color: grey;
     border-radius: 15px;
-    border: 1px solid grey;
+    border: 3px solid grey;
 }
 
 .inputs:nth-child(3) {
-    background-color: rgba(255, 131, 235, 1);
     border-radius: 15px;
-    border: 1px solid rgba(255, 131, 235, 1);
+    border: 3px solid rgba(255, 131, 235, 1);
 }
 
 .input__name, .input__email, .input__password {
     border-radius: 10px;
     border: 1px solid black;
     padding: 0.5rem;
+}
+
+.button__submit {
+    width: 60%;
+    border: 2px solid black;
+}
+
+.button__submit:hover {
+    opacity: 0.3;
+    transition: all 0.5s;
 }
 
 .input__name:focus, .input__email:focus, .input__password:focus {

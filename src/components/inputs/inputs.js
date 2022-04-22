@@ -11,8 +11,9 @@ const Inputs = (props) => (
         <h1 className="inputs__header">Form</h1>
         <p className="inputs__text">{props.text}</p>
         <InputName/>
-        <InputPassword/>
         <InputEmail/>
+        <InputPassword/>
+        <button type="submit" className="button button__submit">Log in</button>
     </form>
 );
 
